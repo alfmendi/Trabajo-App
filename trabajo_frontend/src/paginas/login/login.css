@@ -1,0 +1,114 @@
+.login__contenedor {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .login__container__toastify {
+ toastify-toast-width: 320px;
+  margin: 0;
+  width: 350px;
+  top: 130px;
+  left: -20px;
+} */
+
+.login__texto__toastify {
+  font-size: 12px;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+.login__card {
+  position: relative;
+  width: 350px;
+  height: 380px;
+  padding: 60px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: rgb(0 0 0 / 10%) 0rem 0.25rem 0.375rem -0.0625rem,
+    rgb(0 0 0 / 6%) 0rem 0.125rem 0.25rem -0.0625rem;
+}
+
+.login__card__titulo {
+  z-index: 10;
+  position: absolute;
+  margin: 0 auto;
+  top: -40px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 90%;
+  height: 80px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232));
+  color: #fff;
+  box-shadow: rgb(0 0 0 / 14%) 0rem 0.25rem 1.25rem 0rem,
+    rgb(0 187 212 / 40%) 0rem 0.4375rem 0.625rem -0.3125rem;
+}
+
+.login__card__entradas {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.login__card__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.login__card__footer p {
+  color: rgb(123, 128, 154);
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.login__card__footer a {
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: 600;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 480px) {
+  .login__card {
+    width: 300px;
+    height: 380px;
+  }
+
+  .login__card__titulo {
+    height: 60px;
+    top: -30px;
+    font-size: 12px;
+  }
+
+  .login__contenedor .boton__azul {
+    font-size: 10px;
+    padding: 8px;
+  }
+
+  .login__card__footer p {
+    font-size: 10px;
+  }
+}
+/* Media Query para baja resolución:  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 768px) {
+}
+/* Media Query para Tablets, Ipads en modo horizontal */
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+/* Media Query para Laptops y Sobremesa */
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+/* Media Query para pantallas Grandes */
+@media (min-width: 1281px) {
+}

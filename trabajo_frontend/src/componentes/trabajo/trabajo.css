@@ -1,0 +1,91 @@
+.trabajo__contenedor {
+  width: 350px;
+  height: 150px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #e3edf7;
+  border-radius: 3px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.trabajo__contenedor .trabajo__fecha {
+  width: fit-content;
+  align-self: end;
+  font-size: 12px;
+  border-radius: 3px;
+  padding: 5px 10px;
+  background: #333;
+  color: #eee;
+}
+
+.trabajo__contenedor .trabajo__compañia {
+  font-size: 14px;
+  color: #666;
+}
+
+.trabajo__contenedor .trabajo__elemento {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trabajo__contenedor .trabajo__elemento__botones button {
+  padding: 5px 10px;
+  font-size: 9px;
+}
+.trabajo__contenedor .trabajo__elemento__botones button:first-child {
+  margin-right: 10px;
+}
+
+.trabajo__estado__pendiente {
+  color: #eee;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 3px;
+  background: linear-gradient(195deg, rgb(102, 187, 106), rgb(67, 160, 71));
+}
+
+.trabajo__estado__rechazado {
+  color: #eee;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 3px;
+  background: linear-gradient(195deg, rgb(236, 64, 122), rgb(216, 27, 96));
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 480px) {
+  .trabajo__contenedor {
+    padding: 10px;
+  }
+
+  .trabajo__contenedor .trabajo__fecha {
+    font-size: 10px;
+  }
+  .trabajo__contenedor .trabajo__compañia {
+    font-size: 12px;
+  }
+
+  .trabajo__estado__pendiente,
+  .trabajo__estado__rechazado {
+    font-size: 10px;
+    padding: 5px;
+  }
+}
+/* Media Query para baja resolución:  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 768px) {
+}
+/* Media Query para Tablets, Ipads en modo horizontal */
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+/* Media Query para Laptops y Sobremesa */
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+/* Media Query para pantallas Grandes */
+@media (min-width: 1281px) {
+}

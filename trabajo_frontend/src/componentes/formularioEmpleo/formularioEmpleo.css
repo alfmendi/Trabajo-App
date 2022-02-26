@@ -1,0 +1,63 @@
+.formularioEmpleo__contenedor {
+  margin: 0px auto 20px auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #e3edf7;
+  border-radius: 3px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.formularioEmpleo__texto__toastify {
+  font-size: 12px;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+.formularioEmpleo__contenedor h3 {
+  text-align: center;
+}
+
+.formularioEmpleo__contenedor button {
+  margin-top: 30px;
+}
+
+.formularioEmpleo__entradas {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 480px) {
+  .formularioEmpleo__contenedor h3 {
+    font-size: 12px;
+  }
+
+  .formularioEmpleo__contenedor .boton__azul {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  .formularioEmpleo__contenedor__toastify {
+    margin: 0 auto;
+    width: 200px;
+    border-radius: 5px;
+  }
+}
+/* Media Query para baja resolución:  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 768px) {
+}
+/* Media Query para Tablets, Ipads en modo horizontal */
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+/* Media Query para Laptops y Sobremesa */
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+/* Media Query para pantallas Grandes */
+@media (min-width: 1281px) {
+}

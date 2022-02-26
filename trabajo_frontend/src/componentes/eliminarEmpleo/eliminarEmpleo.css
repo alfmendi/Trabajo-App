@@ -1,0 +1,70 @@
+.eliminarEmpleo__contenedor {
+  height: calc(100vh - 90px);
+  margin: 10px;
+  padding: 20px 10px 10px 10px;
+  border-radius: 8px;
+  box-shadow: rgb(255 255 255 / 90%) 0rem 0rem 0.0625rem 0.0625rem inset,
+    rgb(0 0 0 / 5%) 0rem 1.25rem 1.6875rem 0rem;
+  backdrop-filter: saturate(200%) blur(1.875rem);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.eliminarEmpleo__formulario {
+  margin: 0px auto 20px auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #e3edf7;
+  border-radius: 3px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.eliminarEmpleo__formulario h3 {
+  text-align: center;
+}
+
+.eliminarEmpleo__entradas {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.eliminarEmpleo__botones {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 480px) {
+  .eliminarEmpleo__formulario h3 {
+    font-size: 12px;
+  }
+
+  .eliminarEmpleo__formulario .boton__azul {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  .eliminarEmpleo__formulario .boton__negro {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+}
+/* Media Query para baja resolución:  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 768px) {
+}
+/* Media Query para Tablets, Ipads en modo horizontal */
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+/* Media Query para Laptops y Sobremesa */
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+/* Media Query para pantallas Grandes */
+@media (min-width: 1281px) {
+}

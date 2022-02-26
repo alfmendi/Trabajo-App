@@ -1,0 +1,43 @@
+.plantillaPagina__contenedor {
+  display: flex;
+  height: 100vh;
+}
+
+.plantillaPagina__izquierda {
+  width: 250px;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.plantillaPagina__derecha {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 480px) {
+  .plantillaPagina__izquierda {
+    width: 100%;
+  }
+
+  /* Clase dentro del Media Query para tamaño móvil que 
+       hace que toda la parte derecha tenga un tamaño de 0px */
+  .width__0__movil {
+    width: 0%;
+  }
+}
+/* Media Query para baja resolución:  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 768px) {
+}
+/* Media Query para Tablets y Ipads en modo horizontal */
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+/* Media Query para Laptops y Sobremesa */
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+/* Media Query para pantallas Grandes */
+@media (min-width: 1281px) {
+}

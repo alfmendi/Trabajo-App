@@ -1,0 +1,53 @@
+.principal__contenedor {
+  height: calc(100vh - 90px);
+  margin: 10px;
+  padding: 10px;
+  overflow: auto;
+  border-radius: 8px;
+  box-shadow: rgb(255 255 255 / 90%) 0rem 0rem 0.0625rem 0.0625rem inset,
+    rgb(0 0 0 / 5%) 0rem 1.25rem 1.6875rem 0rem;
+  backdrop-filter: saturate(200%) blur(1.875rem);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.principal__contenedor h2 {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  padding: 5px;
+  background: #e3edf7;
+  border-radius: 3px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 480px) {
+  .principal__contenedor {
+    height: calc(100vh - 70px);
+    font-size: 12px;
+  }
+}
+/* Media Query para baja resolución:  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 768px) {
+}
+/* Media Query para Tablets, Ipads en modo horizontal */
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+/* Media Query para Laptops y Sobremesa */
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+/* Media Query para pantallas Grandes */
+@media (min-width: 1281px) {
+}
+
+/* Esconde las scrollbars en Chrome, Safari y Opera */
+.principal__contenedor::-webkit-scrollbar {
+  display: none;
+}
+
+/* Esconde las scrollbars en IE, Edge y Firefox */
+.principal__contenedor {
+  -ms-overflow-style: none; /* IE y Edge */
+  scrollbar-width: none; /* Firefox */
+}
