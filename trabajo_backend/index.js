@@ -2,6 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
+const path = require("path");
 
 // Paquetes para aumentar la seguridad de la aplicación
 const helmet = require("helmet");
@@ -49,8 +50,21 @@ app.use("/api/tokens", routerTokens);
 app.use("/api/auth", routerAuth);
 app.use("/api/trabajos", routerTrabajos);
 
+// POR FIN: ESTA SOLUCIÓN ES CORRECTA!!!!!!!!!!!!!
+// La aplicación cada vez que se hacía un refresh (F5) llamaba al servidor
+// con la dirección que figuraba en el navegador. Esto hacía que cualquier
+// dirección que no fuese el raiz definido en app.use(express.static("build"))
+// generase un error.
+// Para solventarlo, se añade el siguiente código...
+// app.get("*", function (request, response) {
+//   response.sendFile(path.resolve(__dirname, "../client/build", "index.html"));
+// });
+app.get("*", function (req, res) {
+  res.sendFile(path.resolve(__dirname, "./build", "index.html"));
+});
+
 // Middleware
-app.use(rutaNoExisteMiddleware);
+// app.use(rutaInvalidaMiddleware);
 app.use(manejadorErrorMiddleware);
 
 const PORT = process.env.PORT || 5000;
